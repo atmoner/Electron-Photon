@@ -1,0 +1,13 @@
+{
+  "name": "electron-proton",
+  "version": "0.1.0",
+  "main": "main.js",
+  "scripts": {
+  	"start" : "electron .",
+    "setup": "npm install && mkdir -p tmp_",
+    "preinstall": "npm i -g electron && wget https://github.com/connors/photon/archive/master.zip && unzip master.zip -d tmp_ && rm -f master.zip && cp -Rf tmp_/photon-master/dist/css/ . && cp -Rf tmp_/photon-master/dist/fonts/ . && cp -Rf tmp_/photon-master/dist/template-app/js/ . && rm -R tmp_/"
+  },
+  "author": "atmoner",
+  "license": "CC0-1.0"
+}
+    
